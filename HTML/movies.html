@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Movies | CineWorld</title>
+  <link rel="stylesheet" href="../CSS/common.css"><link rel="stylesheet" href="../CSS/movies.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="../index.html">CINE<span>WORLD</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <nav id="mainNav">
+    <a href="../index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="action.html">Genres</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main class="section page-section">
+  <h1>Explore All Movies</h1><p class="subtitle">Search and discover your favorite films.</p>
+  <input id="searchInput" class="search-input" type="search" placeholder="Search movies by name..." aria-label="Search movies">
+  <div class="filter-row">
+    <label for="genreFilter">Filter by genre:</label>
+    <select id="genreFilter">
+      <option value="All">All Genres</option><option>Action</option><option>Comedy</option>
+      <option>Horror</option><option>Sci-Fi</option><option>Drama</option><option>Romance</option>
+    </select>
+  </div>
+  <div class="movie-grid" id="movieContainer"></div><p id="noResults" class="empty-message"></p>
+</main>
+<footer class="footer">
+  <a class="logo" href="../index.html">CINE<span>WORLD</span></a>
+  <p>Your destination for movies and entertainment.</p>
+  <p class="copyright">© 2026 CineWorld. All Rights Reserved.</p>
+</footer>
+<script src="../JS/data.js"></script><script src="../JS/common.js"></script>
+<script src="../JS/movies.js"></script><script src="../JS/search.js"></script>
+</body></html>

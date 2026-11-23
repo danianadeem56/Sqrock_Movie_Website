@@ -1,0 +1,9 @@
+.genre-page {
+  min-height: 65vh;
+}
+.genre-page h1 {
+  color: #ff75a0;
+}
+.movie-card:hover {
+  outline: 1px solid #ff75a0;
+}

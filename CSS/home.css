@@ -1,0 +1,77 @@
+.hero {
+  min-height: 510px;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, #101014 8%, #101014d9 48%, #10101422),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1800&q=85")
+      center/cover;
+}
+.hero-content {
+  max-width: 610px;
+}
+.eyebrow {
+  color: #ff555d;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.12;
+}
+.hero h1 span {
+  color: #ff3944;
+}
+.hero-content > p:not(.eyebrow) {
+  color: #ddd;
+  max-width: 520px;
+  margin-top: 18px;
+  line-height: 1.8;
+}
+.genre-section {
+  padding-top: 20px;
+}
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-top: 24px;
+}
+.genre-grid a {
+  background: #24242d;
+  border: 1px solid #333;
+  padding: 22px 10px;
+  text-align: center;
+  border-radius: 9px;
+  font-size: 23px;
+  transition: 0.25s;
+}
+.genre-grid a span {
+  display: block;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.genre-grid a:hover {
+  background: #e50914;
+  transform: translateY(-5px);
+}
+
+/* Media Queries */
+
+@media (max-width: 850px) {
+  .genre-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .hero {
+    min-height: 420px;
+    padding: 45px 6%;
+  }
+  .genre-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
